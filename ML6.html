@@ -1,0 +1,29 @@
+<title>MadLib</title>
+<div id="grab">
+<link rel="stylesheet" class=button3 type="text/css" href="style.css">
+<center>
+<h5 class=story>Name: <input class=button3 type="text" id="a" placeholder="Human Name..."></h5>
+
+<h5 class=story>Creature: <input class=button3 type="text" id="b" placeholder="Creature Name..."></h5>
+
+<h5 class=story>Weapon: <input class=button3 type="text" id="c" placeholder="Weapon..."></h5>
+
+<!--input values:-->
+<button class=button onclick="generate()">Enter</button>
+
+
+<script>
+function generate() {
+	a = document.getElementById("a").value
+	b = document.getElementById("b").value
+	c = document.getElementById("c").value
+
+	story = a+" wandered down the street. Suddenly, a visious "+b+" attacked "+a+". It was a treacherous brawl and "+a+" pulled out a weapon, a "+c+". The weapon worked on the "+b+" and even after fighting for hours "+a+" eventually beat the "+b+" with the "+c+"."
+	document.getElementById("mainstory").innerHTML = story
+}
+</script>
+
+
+<p id="mainstory"></p>
+</center>
+</div>

@@ -1,0 +1,28 @@
+<div id="grab">
+<link rel="stylesheet" type="text/css" href="style.css">
+<center>
+<h5 class=story>What is the main character's name? <input class=button3 type="text" id="a" placeholder="Human Name..."></h5>
+
+<h5 class=story>What is the name of the magic school? <input class=button3 type="text" id="b" placeholder="School Name..."></h5>
+
+<h5 class=story>What is the name of his teacher? <input class=button3 type="text" id="c" placeholder="Human Name..."></h5>
+
+<!--input values:-->
+<button class=button onclick="generate()">Enter</button>
+
+
+<script>
+function generate() {
+	a = document.getElementById("a").value
+	b = document.getElementById("b").value
+	c = document.getElementById("c").value
+
+	story = a+", was young and still in middle school when called by "+b+" to come to their school. Thinking it was a normal school "+a+" accepted. The first meeting there was a test. And after this not-so-written test, "+a+" knew this was know normal school. "+a+" trained with Master "+c+" and magic was becomming stronger and stronger at "+b+", but not just "+a+", all over the school since "+a+"'s arrival. Once "+a+" finished training, "+a+" become a Master at "+b+" and did for other children what Master "+c+" had done for "+a+"."
+	document.getElementById("mainstory").innerHTML = story
+}
+</script>
+
+
+<p id="mainstory"></p>
+</center>
+</div>

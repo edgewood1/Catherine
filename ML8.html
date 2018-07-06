@@ -1,0 +1,59 @@
+<title>MadLib</title>
+<div id="grab">
+<center>
+<h5 class=story>Age? <input class=button3 type="text" id="a" placeholder="Age here..."></h5>
+
+<h5 class=story>What is the first main character's name? <input class=button3 type="text" id="b" placeholder="Main Character..."></h5>
+
+<h5 class=story>What is the second main character's name? <input class=button3 type="text" id="c" placeholder="Main Character..."></h5>
+
+<h5 class=story>Which one dissapears? <input class=button3 type="text" id="d" placeholder="First or Second Character..."></h5>
+
+<h5 class=story>Sound in their heads? <input class=button3 type="text" id="e" placeholder="Loud Sound..."></h5>
+
+<h5 class=story>Name: <input class=button3 type="text" id="f" placeholder="Human Name..."></h5>
+
+<h5 class=story>Creature: <input class=button3 type="text" id="g" placeholder="Creature Name..."></h5>
+
+<h5 class=story>Weapon: <input class=button3 type="text" id="h" placeholder="Weapon..."></h5>
+
+<h5 class=story>Greeting? <input class=button3 type="text" id="i" placeholder="Greeting..."></h5>
+
+<h5 class=story>Adjective: <input class=button3 type="text" id="j" placeholder="adj..."></h5>
+
+<h5 class=story>Noun Plural: <input class=button3 type="text" id="k" placeholder="Noun..."></h5>
+
+<h5 class=story>Which one is awesome? <input class=button3 type="text0" id="l" placeholder="First or Second Character..."></h5>
+
+<h5 class=story>What do they scream? <input class=button3 type="text" id="m" placeholder="Loud Sound..."></h5>
+
+<h5 class=story>Plant: <input class=button3 type="text" id="n" placeholder="Plant Name..."></h5>
+
+<h5 class=story>Creature: <input class=button3 type="text" id="o" placeholder="Mythical Animal Name..."></h5>
+
+<h5 class=story>Bla: <input class=button3 type="text" id="p" placeholder="Sorry this is just a place holder..."></h5>
+
+<!--input values: a=age b=Mike c=Ellie d=Ellie e=Roar-->
+<button class=button onclick="generate()">Enter</button>
+
+
+<script>
+function generate() {
+	a = document.getElementById("a").value
+	b = document.getElementById("b").value
+	c = document.getElementById("c").value
+	d = document.getElementById("d").value
+	e = document.getElementById("e").value
+	f = document.getElementById("f").value
+	g = document.getElementById("g").value
+	h = document.getElementById("h").value
+
+	story = "This isn't a MadLib. You wasted your time by typing all that in. The others are MadLibs though, so click again to do a real MadLib."
+	document.getElementById("mainstory").innerHTML = story
+}
+</script>
+
+
+<p id="mainstory"></p>
+</center>
+</div>

@@ -1,0 +1,43 @@
+body {
+	background-image: linear-gradient(to right top, #8d4bc3, #f2389c, #ff615f, #ffa818, #deeb12);
+    color:#ffffff;
+    font-family:verdana;
+    font-size:20px;
+}
+
+.story {
+	color:#5ce23c;
+}
+
+.button {
+	width:100px;
+	height:50px;
+	background-image: linear-gradient(to right top, #13fa05, #00fd7a, #00fcb7, #00f8e1, #01f1f8);
+	font-size:19px;
+	font-family:comic;
+	color:#ffffff;
+	border-width:10px;
+	border-radius:6px;
+}
+
+.button2 {
+	width:100px;
+	height:75px;
+	background-image: linear-gradient(to right top, #8d4bc3, #f2389c, #ff615f, #ffa818, #deeb12);
+	font-size:19px;
+	font-family:comic;
+	color:#ffffff;
+	border-width:10px;
+	border-radius:6px;
+}
+
+.button3 {
+	width:125px;
+	height:35px;
+	background-color:#ffffff;
+	font-size:15px;
+	font-family:times;
+	color:#818284;
+	border-width:5px;
+	border-radius:6px;
+}

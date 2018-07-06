@@ -1,0 +1,29 @@
+<title>MadLib</title>
+<div id="grab">
+<link rel="stylesheet" type="text/css" href="style.css">
+<center>
+<h5 class=story>Like or Dislike?<input class=button3 type="text" id="a" placeholder="Pick one..."></h5>
+
+<h5 class=story>Your name?<input class=button3 type="text" id="b" placeholder="Name..."></h5>
+
+<h5 class=story>What do you like/dislike?<input class=button3 type="text" id="c" placeholder="Noun..."></h5>
+
+<!--input values:-->
+<button class=button onclick="generate()">Enter</button>
+
+
+<script>
+function generate() {
+	a = document.getElementById("a").value
+	b = document.getElementById("b").value
+	c = document.getElementById("c").value
+
+	story = b+" really "+a+"s "+c+". Why? Well that's simple. You see... "+b+" once saw "+c+". And suddenly, poof! "+b+" "+a+"d "+c
+	document.getElementById("mainstory").innerHTML = story
+}
+</script>
+
+
+<p id="mainstory"></p>
+</center>
+</div>

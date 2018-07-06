@@ -1,0 +1,29 @@
+<title>MadLib</title>
+<div id="grab">
+<link rel="stylesheet" type="text/css" href="style.css">
+<center>
+<h5 class=story>Character Name?<input class=button3 type="text" id="a" placeholder="Name..."></h5>
+
+<h5 class=story>Character Name?<input class=button3 type="text" id="b" placeholder="Name..."></h5>
+
+<h5 class=story>Adjective?<input class=button3 type="text" id="c" placeholder="adj..."></h5>
+
+<!--input values:-->
+<button class=button onclick="generate()">Enter</button>
+
+
+<script>
+function generate() {
+	a = document.getElementById("a").value
+	b = document.getElementById("b").value
+	c = document.getElementById("c").value
+
+	story = a+" walked up to "+b+" and asked, 'How has your day been?' "+b+" responded with, '"+c+", you?' "+a+" walked away. Why?"
+	document.getElementById("mainstory").innerHTML = story
+}
+</script>
+
+
+<p id="mainstory"></p>
+</center>
+</div>

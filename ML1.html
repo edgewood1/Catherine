@@ -1,0 +1,35 @@
+<div id="grab">
+<center>
+<h5 class=story>Where does the story take place? <input class=button3 type="text" id="a" placeholder="Setting..."></h5>
+
+<h5 class=story>Who take over and enslaves the people? <input class=button3 type="text" id="b" placeholder="Antagonist..."></h5>
+
+<h5 class=story>Where do the people get taken after they are enslaved? <input class=button3 type="text" id="c" placeholder="Another Setting..."></h5>
+
+<h5 class=story>Who saves the people? <input class=button3 type="text" id="d" placeholder="Protagonist..."></h5>
+
+<!--input values: a=setting b=antagonist c=extra setting d=protagonist-->
+<button class=button onclick="generate()">Enter</button>
+
+<script>
+a = document.getElementById("a").value
+b = document.getElementById("b").value
+c = document.getElementById("c").value
+d = document.getElementById("d").value
+
+function generate() {
+	a = document.getElementById("a").value
+	b = document.getElementById("b").value
+	c = document.getElementById("c").value
+	d = document.getElementById("d").value
+
+
+	story = "A long time ago in "+a+", "+b+" rose to power. Once everyone in "+a+" was captured they were taken to "+c+". "+c+" was a horrible place. To save the people and escape the clutches of "+b+", "+d+" had to survive three brutal trials and everyone would be free. This was a bargain with "+b+", who was certain "+d+" would not survive even the first task. But "+b+" was horribly mistaken. "+d+" survived not only the first trial, but all three. The people were overjoyed at the end of "+b+"'s rain. The people were forever in debt and were forever grateful to "+d+"."
+	document.getElementById("mainstory").innerHTML = story
+}
+
+</script>
+
+<p id="mainstory"></p>
+</center>
+</div>

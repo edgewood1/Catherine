@@ -1,0 +1,34 @@
+<title>MadLib</title>
+<div id="grab">
+<center>
+<h5 class=story>Age? <input class=button3 type="text" id="a" placeholder="Age here..."></h5>
+
+<h5 class=story>What is the first main character's name? <input class=button3 type="text" id="b" placeholder="Main Character..."></h5>
+
+<h5 class=story>What is the second main character's name? <input class=button3 type="text" id="c" placeholder="Main Character..."></h5>
+
+<h5 class=story>Which one dissapears? <input class=button3 type="text" id="d" placeholder="First or Second Character..."></h5>
+
+<h5 class=story>Sound in their heads? <input class=button3 type="text" id="e" placeholder="Loud Sound..."></h5>
+
+<!--input values: a=age b=Mike c=Ellie d=Ellie e=Roar-->
+<button class=button onclick="generate()">Enter</button>
+
+
+<script>
+function generate() {
+	a = document.getElementById("a").value
+	b = document.getElementById("b").value
+	c = document.getElementById("c").value
+	d = document.getElementById("d").value
+	e = document.getElementById("e").value
+
+	story = a+"-year-old twins, "+b+" and "+c+", live in a future behind the wall – safe from the plague animals beyond. Or so they’ve been told. But when "+d+" disappears, and the other takes part in a sinister virtual reality game, they begin to discover their concrete world is built on lies. Determined to find each other again, they go in search of the truth. And as a strange sound in their heads grows to a "+e+", they find out that children and the planet have never mattered more."
+	document.getElementById("mainstory").innerHTML = story
+}
+</script>
+
+
+<p id="mainstory"></p>
+</center>
+</div>

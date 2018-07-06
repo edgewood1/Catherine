@@ -1,0 +1,33 @@
+<title>MadLib</title>
+<p><center>Click to load a MadLib</center></p>
+
+<center><button class=button2 onclick="myFunction()">MadLibs</button></center>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+function myFunction() {
+    var x = Math.floor((Math.random() * 10) + 1);
+    pathtoload = 'ML' + x + '.html';
+    load(pathtoload);
+}
+function load(link) {
+    $.ajax({ type: "GET",
+    url: link,
+    data: {},
+    dataType: "html",
+    success: function(html){
+    	console.log("Success")
+      newtitle = $(html).filter('title').text();
+      document.title = newtitle
+      newcontent = $(html).filter('div#grab').html();
+      $('#content').html(newcontent)
+    }
+  });
+}
+
+</script>
+
+<div id="content"></div>
